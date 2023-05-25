@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEDED"
+        android:textColor="#000000">
+
+        <TextView
+            android:id="@+id/id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="19dp"
+            android:text="SimpleBlog"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/title_ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            android:layout_marginTop="-5dp"
+            android:text="Ajouter un article"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="50px"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/edit_title"
+            android:inputType="textMultiLine"
+            android:lines="1"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Titre"
+            android:textAlignment="textStart"
+            android:background="@drawable/edit_text"
+            tools:ignore="RtlCompat"
+            android:required="true"
+            style="@style/GrayPlaceholderEditText"/>
+        <EditText
+            android:id="@+id/edit_author"
+            android:inputType="textMultiLine"
+            android:lines="1"
+            android:layout_marginTop="-5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="auteur"
+            android:textAlignment="textStart"
+            android:background="@drawable/edit_text"
+            tools:ignore="RtlCompat"
+            android:required="true"
+            style="@style/GrayPlaceholderEditText"/>
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-5dp"
+            android:gravity="top|center_horizontal"
+            android:inputType="textMultiLine"
+            android:lines="7"
+            android:paddingTop="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Contenu"
+            android:background="@drawable/edit_text"
+            android:required="true"
+            style="@style/GrayPlaceholderEditText"/>
+
+        <Button
+            android:id="@+id/Button_add"
+            android:text="Ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/Button_reset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_annuler"
+            android:text="X"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
